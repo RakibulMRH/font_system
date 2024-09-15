@@ -1,0 +1,66 @@
+/* Custom styles for font preview */
+.font-preview {
+    font-size: 24px;
+}
+.font-item {
+    margin-bottom: 15px;
+}
+.font-group-item {
+    margin-bottom: 15px;
+}
+/* Hover effect for drop zone */
+#dropZone.hover {
+    background-color: #e9e9e9;
+}
+/* Button Styles */
+.btn-add-row {
+    border: 1px solid green;
+    background-color: transparent;
+    color: green;
+}
+.btn-add-row:hover {
+    background-color: green;
+    color: white;
+}
+.btn-create {
+    border: none;
+    background-color: green;
+    color: white;
+}
+.btn-create:hover {
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+}
+/* Remove button (cross icon) */
+.removeRow {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+/* Align buttons */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Align form fields */
+.fontGroupRow {
+    display: flex;
+    align-items: center;
+}
+.fontGroupRow .form-group {
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+/* Edit and Delete links */
+.action-link {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.editGroup {
+    color: blue;
+}
+.deleteGroup {
+    color: red;
+}
