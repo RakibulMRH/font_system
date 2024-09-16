@@ -224,12 +224,40 @@ $(document).ready(function() {
     // Attach a single submit handler to the form
     $('#fontGroupForm').on('submit', function(e) {
         e.preventDefault();
+
+         // Collect selected fonts
+        var selectedFonts = $('select[name="fonts[]"]').map(function() {
+            return $(this).val();
+        }).get();
+
+        // Check for duplicates
+        if (hasDuplicates(selectedFonts)) {
+            alert('You have selected the same font multiple times. Please select different fonts.');
+            return;
+        }
+
         if (isEditMode) {
             updateFontGroup();
         } else {
             createFontGroup();
         }
     });
+
+    function hasDuplicates(array) {
+        return (new Set(array)).size !== array.length;
+    }
+    
+    $('body').on('change', 'select[name="fonts[]"]', function() {
+        var selectedFonts = $('select[name="fonts[]"]').map(function() {
+            return $(this).val();
+        }).get();
+    
+        if (hasDuplicates(selectedFonts)) {
+            alert('You have selected the same font multiple times. Please select different fonts.');
+            $(this).val(''); // Reset the duplicate selection
+        }
+    });
+    
 
     // Function to create a font group
     function createFontGroup() {
