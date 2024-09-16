@@ -14,7 +14,7 @@
 
     <!-- Font Upload Section -->
     <div id="dropZone" class="p-5 text-center" style="cursor: pointer; border: 2px dashed #B2BEB5;">
-        <img src="assets/upload_icon.png" id="uploadIcon" width="10%" height="10%"/>
+        <img src="public/upload_icon.png" id="uploadIcon" width="10%" height="10%"/>
         <input type="file" id="fontUpload" accept=".ttf" multiple style="display: none;" />
         <p><b>Click to upload</b> or drag and drop</p>
         <p>Only TTF File Allowed</p>
@@ -57,7 +57,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <img src="assets/cross.png" alt="Remove" class="removeRow" />
+                    <img src="public/cross.png" alt="Remove" class="removeRow" />
                 </div>
             </div>
         </div>

@@ -207,7 +207,7 @@ $(document).ready(function() {
                     </select>
                 </div>
                 <div class="form-group">
-                    <img src="assets/cross.png" alt="Remove" class="removeRow" />
+                    <img src="public/cross.png" alt="Remove" class="removeRow" />
                 </div>
             </div>
         `;
@@ -246,7 +246,7 @@ $(document).ready(function() {
     function hasDuplicates(array) {
         return (new Set(array)).size !== array.length;
     }
-    
+
     $('body').on('change', 'select[name="fonts[]"]', function() {
         var selectedFonts = $('select[name="fonts[]"]').map(function() {
             return $(this).val();
@@ -347,7 +347,7 @@ $(document).ready(function() {
                     </select>
                 </div>
                 <div class="form-group">
-                    <img src="assets/cross.png" alt="Remove" class="removeRow" />
+                    <img src="public/cross.png" alt="Remove" class="removeRow" />
                 </div>
             </div>
         `);
@@ -392,7 +392,7 @@ $(document).ready(function() {
                                 </select>
                             </div>
                             <div class="form-group">
-                                <img src="assets/cross.png" alt="Remove" class="removeRow" />
+                                <img src="public/cross.png" alt="Remove" class="removeRow" />
                             </div>
                         </div>
                     `;
